@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI/CS Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary-color), #4a6572);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h1, h2, h3 { color: var(--primary-color); border-bottom: 2px solid #edf2f7; padding-bottom: 8px; }
+        header h1 { color: white; border: none; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .badge {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin: 2px;
+        }
+        .project-card {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover { background: #2980b9; }
+        .warning-box {
+            background-color: #fffaf0;
+            border: 1px solid #feebc8;
+            color: #dd6b20;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hong Gil Dong</h1>
+        <p>AI Engineer & Computer Vision Researcher Trainee</p>
+    </header>
+
+    <!-- 1. 자기소개 / About Me -->
+    <section id="about">
+        <h2>1. About Me</h2>
+        <p>인공지능공학을 전공하며 Computer Vision, Natural Language Processing, Data Analysis에 관심이 있습니다. 향후 AI 서비스 개발자 또는 AI 연구자로 성장하는 것을 목표로 합니다.</p>
+        <ul>
+            <li><strong>전공:</strong> 인공지능공학부</li>
+            <li><strong>관심 분야:</strong> 딥러닝 기반 객체 검출(Object Detection), 생성형 AI 모델링</li>
+            <li><strong>현재 학습 중인 기술:</strong> PyTorch Advanced 기법, Docker를 활용한 MLOPs 기초</li>
+        </ul>
+    </section>
+
+    <!-- 2. Education -->
+    <section id="education">
+        <h2>2. Education</h2>
+        <h3>Chosun University</h3>
+        <ul>
+            <li><strong>학과:</strong> Department of Artificial Intelligence Engineering</li>
+            <li><strong>학년:</strong> 3학년 재학 중 (재학 기간: 2024.03 ~ 현재)</li>
+            <li><strong>주요 수강 과목:</strong> Machine Learning, Deep Learning, Data Structures, Web Programming</li>
+            <li><strong>GPA:</strong> 4.1 / 4.5 <small>(선택 기재)</small></li>
+        </ul>
+    </section>
+
+    <!-- 3. Skills -->
+    <section id="skills">
+        <h2>3. Skills</h2>
+        <div>
+            <h3>Programming & AI/ML</h3>
+            <span class="badge">Python (Intermediate)</span>
+            <span class="badge">PyTorch (Basic)</span>
+            <span class="badge">scikit-learn (Intermediate)</span>
+            <span class="badge">C/C++ (Basic)</span>
+        </div>
+        <div>
+            <h3>Web & Tools</h3>
+            <span class="badge">HTML/CSS (Intermediate)</span>
+            <span class="badge">React (Basic)</span>
+            <span class="badge">Git/GitHub (Basic)</span>
+            <span class="badge">VS Code (Intermediate)</span>
+        </div>
+    </section>
+
+    <!-- 4. Projects -->
+    <section id="projects">
+        <h2>4. Projects</h2>
+        <div class="project-card">
+            <h3>[프로젝트명] 딥러닝 기반 실시간 객체 인식 시스템</h3>
+            <ul>
+                <li><strong>한 줄 요약:</strong> YOLOv8을 활용하여 웹캠 입력 영상에서 실시간으로 사물을 역추적하는 웹 서비스</li>
+                <li><strong>수행 기간:</strong> 2025.09 ~ 2025.11 (3개월)</li>
+                <li><strong>사용 기술:</strong> Python, PyTorch, YOLOv8, Flask</li>
+                <li><strong>본인 역할:</strong> Custom Dataset 전처리 및 모델 Fine-tuning, Flask 백엔드 API 개발</li>
+                <li><strong>주요 기능:</strong> 실시간 비디오 스트리밍 객체 탐지, 탐지 로그 데이터베이스 저장</li>
+                <li><strong>결과/성과:</strong> 기존 기본 모델 대비 Custom 데이터 탑재 후 정확도(mAP) 8% 향상</li>
+                <li><strong>GitHub:</strong> <a href="#">Repository Link</a></li>
+                <li><strong>Demo:</strong> <a href="#">Live Demo Link</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 5. Experience -->
+    <section id="experience">
+        <h2>5. Experience</h2>
+        <ul>
+            <li><strong>AI Lab Undergraduate Intern</strong> (2025.03 ~ 2025.08) - 컴퓨터 비전 연구실 학부 인턴 수행</li>
+            <li><strong>Programming Club Member</strong> (2024.03 ~ 현재) - 교내 알고리즘 소모임 활동</li>
+            <li><strong>AI Competition Participant</strong> (2025.10) - 교내 인공지능 경진대회 장려상 수상</li>
+        </ul>
+    </section>
+
+    <!-- 6. CV / Resume PDF 링크 -->
+    <section id="cv">
+        <h2>6. CV / Resume</h2>
+        <p>상세 이력서가 필요하신 분은 아래 링크를 통해 PDF 버전을 다운로드하실 수 있습니다.</p>
+        <a href="./resume.pdf" class="btn" target="_blank">Download My Resume (PDF)</a>
+        <div class="warning-box">
+            ⚠️ <strong>주의:</strong> 본 PDF 이력서에는 주민등록번호, 주소 등 민감한 개인정보가 포함되어 있지 않습니다.
+        </div>
+    </section>
+
+    <!-- 7. Contact -->
+    <section id="contact">
+        <h2>7. Contact</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:student@example.com">student@example.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/username" target="_blank">github.com/username</a></li>
+            <li><strong>LinkedIn:</strong> <a href="#" target="_blank">LinkedIn Profile (Optional)</a></li>
+            <li><strong>Blog/Notion:</strong> <a href="#" target="_blank">Personal Blog (Optional)</a></li>
+        </ul>
+    </section>
+
+    <!-- 8. Career Goal / Future Plan -->
+    <section id="career-goal">
+        <h2>8. Career Goal</h2>
+        <ul>
+            <li>Computer Vision Engineer</li>
+            <li>AI Developer</li>
+            <li>Graduate School / Research Track (컴퓨터 비전 및 생성 모델 연구)</li>
+        </ul>
+    </section>
+
+</body>
+</html>
